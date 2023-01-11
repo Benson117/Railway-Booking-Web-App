@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./images/icon.jpg" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/index.js" async defer></script>
+    <script src="./js/main.js" async defer></script>
+    <title>Home</title>
+</head>
+<body>
+    <nav id="navigation_bar">
+        <div id="inner">
+            <div class="nav">Home</div>
+            <div class="nav">Purchase Ticket</div>
+            <div class="nav">Trips</div>
+            <div class="nav">About</div>
+        </div>
+    </nav>
+    <div id="header">
+
+    </div>
+
+    <div id="details">
+        <h2 id="header_text">Welcome</h2>
+        <p>
+            Please navigate our system using the navigation bar above
+        </p>
+    </div>
+    <script>
+        document.onload = () => {
+            let doc_title = document.getElementById("header_text");
+            console.log(doc_title);
+            doc_title.innerHTML = "Welcome to MultiNational Railway";
+    
+        }
+    </script>
+</body>
+</html>
